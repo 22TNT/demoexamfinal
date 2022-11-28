@@ -1,0 +1,21 @@
+﻿<UserControl x:Class="de28.Product"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:de28"
+             mc:Ignorable="d" d:DesignWidth="800" Height="250">
+    <Grid Background="White">
+        <Image x:Name="productImage" HorizontalAlignment="Left" Height="200" Margin="10,10,0,0" VerticalAlignment="Top" Width="300" Source="{Binding ProductImagePath}"/>
+        <Rectangle x:Name="Rectangle" HorizontalAlignment="Left" Height="200" Margin="321,10,0,0" Stroke="Black" VerticalAlignment="Top" Width="313" Fill="#FF76E383"/>
+        <Label x:Name="nameLabel" Content="{Binding ProductName}" HorizontalAlignment="Left" Margin="321,25,0,0" VerticalAlignment="Top" Width="313" FontFamily="Comic Sans MS" FontWeight="Bold" Height="30"/>
+        <Label x:Name="descriptionLabel" Content="{Binding ProductDescription}" HorizontalAlignment="Left" Margin="321,60,0,0" VerticalAlignment="Top" Width="313" Height="65" FontFamily="Comic Sans MS"/>
+        <Label x:Name="manufacturerTextLabel" Content="Производитель:" HorizontalAlignment="Left" Margin="325,130,0,0" VerticalAlignment="Top" Width="99" FontFamily="Comic Sans MS"/>
+        <Label x:Name="manufacturerLabel" Content="{Binding ProductManufacturer}" HorizontalAlignment="Left" Margin="429,130,0,0" VerticalAlignment="Top" Width="205" Height="26" FontFamily="Comic Sans MS"/>
+        <Label x:Name="priceTextLabel" Content="Цена:" HorizontalAlignment="Left" Margin="325,161,0,0" VerticalAlignment="Top" Width="49" FontFamily="Comic Sans MS"/>
+        <Label x:Name="priceLabel" Content="{Binding ProductPrice}" HorizontalAlignment="Left" Margin="379,161,0,0" VerticalAlignment="Top" Width="255" Height="26" FontFamily="Comic Sans MS"/>
+        <Label x:Name="countTextLabel" Content="Количество на складе:" HorizontalAlignment="Left" Margin="639,10,0,0" VerticalAlignment="Top" Width="151" Height="30" FontFamily="Comic Sans MS"/>
+        <Label x:Name="countLabel" Content="{Binding ProductCount}" HorizontalAlignment="Left" Margin="639,37,0,0" VerticalAlignment="Top" Width="75" Height="38" FontFamily="Comic Sans MS"/>
+        <Label x:Name="productCountTypeLabel" Content="{Binding ProductCountType}" HorizontalAlignment="Left" Margin="719,40,0,0" VerticalAlignment="Top" Height="35" Width="71" FontFamily="Comic Sans MS"/>
+    </Grid>
+</UserControl>
